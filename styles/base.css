@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Patrick+Hand&display=swap');
+
+:root {
+    --primary-color: #DDCECD;
+    --secondary-color: #37392E;
+    --accent1-color: #19647E;
+    --accent2-color: #EEE5E5;
+    --accent3-color: #FAFAFA;
+
+    --nav-background-color: #37392E;
+    --nav-link-color:#19647E;
+    --nav-hover-link-color: #FAFAFA;
+    --nav-hover-background-color: #19647E;
+
+    --heading-font: 'Vidaloka-regular', serif;
+    --paragraph-font: 'Patrick-hand-regular', sans-serif;
+
+}
+
+/* Navigation and header*/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--nav-background-color);
+    padding: 10px;
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-hover-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    border-radius: 15px;
+}
+
+header {
+    grid-column: 1/5;
+    display: grid;
+    background-color: var(--accent1-color);
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+/* H1, H2 and paragraph */
+
+h1 {
+    padding: 15px;
+    font-size: 30px;
+    color: var(--accent3-color);
+    font-family: var(--heading-font);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    font-size: 25px;
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+/* Body */
+
+body {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    margin: 0px 100px;
+    background-color: var(--primary-color)
+}
+
+main {
+    display: grid;
+    height: 300px;
+    grid-row: 2/4;
+    grid-column: 1/5;
+}
+
+.card1 {
+    display: grid;
+    grid-column: 1/3;
+    padding: 15px;
+    background-color: var(--accent2-color);
+    margin: 10px;
+    border-radius: 25px;
+    border: 2px solid var(--accent1-color);
+}
+
+.card2 {
+    display: grid;
+    padding: 15px;
+    grid-column: 3/4;
+    background-color: var(--accent2-color);
+    margin: 10px;
+    border-radius: 25px;
+    border: 2px solid var(--accent1-color);
+}
+
+/* Footer */
+
+footer {
+    grid-column: 1/5;
+    grid-row: 5/6;
+    height: 150px;
+    background-color: var(--accent1-color);
+    color: var(--accent3-color);
+    text-align: center;
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+}
