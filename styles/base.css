@@ -84,12 +84,12 @@ body {
     flex-direction: column;
     margin: 0px 100px;
     background-color: var(--primary-color);
-    max-width: 1200;
+    max-width: 1200px;
 }
 
 main {
     display: grid;
-    max-width: 1200;
+    max-width: 1200px;
 }
 
 .card1 {
