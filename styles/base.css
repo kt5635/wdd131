@@ -85,6 +85,8 @@ body {
     margin: 0px 100px;
     background-color: var(--primary-color);
     max-width: 1200px;
+    justify-content: center;
+    margin: auto;
 }
 
 main {
@@ -118,7 +120,7 @@ main {
     margin: 15px;
 }
 
-.flag-img {
+figure {
     grid-column: 1/2;
     grid-row: 2/4;
     padding: 15px;
