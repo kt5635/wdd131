@@ -1,7 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Itim&family=Patrick+Hand&display=swap');
-
 :root {
     --primary-color: #DDCECD;
     --secondary-color: #37392E;
@@ -20,6 +17,18 @@
 }
 
 /* Navigation and header*/
+
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
 
 nav {
     display: flex;
