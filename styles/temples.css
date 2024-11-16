@@ -59,6 +59,10 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
+body {
+    max-width: 1600px;
+
+}
 
 header {
     display: grid;
@@ -83,8 +87,8 @@ h2 {
 
 main {
     display: grid;
-    max-width: auto;
     background-color: var(--primary-color);
+    justify-content: center;
 }
 
 main h2 {
@@ -93,8 +97,6 @@ main h2 {
 }
 
 .temple-card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 450px);
     justify-content: center;
 }
 
@@ -114,3 +116,19 @@ footer {
     font-family: var(--paragraph-font);
     font-size: 20px;
 }
+
+@media screen and (min-width: 500px) {
+
+    main {
+        max-width: auto;
+    }
+
+    main h2 {
+        max-width: auto;
+    }
+
+    .temple-card-container {
+        grid-template-columns: repeat(3, 450px);
+    }
+    }
+    
