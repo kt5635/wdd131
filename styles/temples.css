@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #ada0a6;
+    --secondary-color: #37392E;
+    --accent1-color: #D2CBCB;
+    --accent2-color: #DED6D6;
+    --accent3-color: #F9E7E7;
+
+    --nav-background-color: #F9E7E7;
+    --nav-link-color:#ada0a6;
+    --nav-hover-link-color: #37392E;
+    --nav-hover-background-color: #ada0a6;
+
+    --heading-font: 'vidaloka-regular', serif;
+    --paragraph-font: 'patrick-hand-regular', sans-serif;
+
+}
+
+/* Navigation and header*/
+
+.vidaloka-regular {
+    font-family: "Vidaloka", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+  .patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--nav-background-color);
+    padding: 10px;
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+
+}
+
+nav h1 {
+    padding: 0;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-hover-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+header {
+    display: grid;
+    background-color: var(--accent3-color);
+    font-family: var(--heading-font);
+}
+
+h1 {
+    padding: 15px;
+    font-size: 30px;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+h2 {
+    padding: 15px;
+    font-size: 25px;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+main {
+    display: grid;
+    max-width: auto;
+    background-color: var(--primary-color);
+}
+
+main h2 {
+    background-color: var(--accent2-color);
+    margin-top: 0;
+}
+
+.temple-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    justify-content: center;
+}
+
+figure {
+    background-color: var(--accent3-color);
+    padding: 25px;
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    height: auto;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    justify-content: center;
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+}

@@ -11,3 +11,13 @@ header, main, footer {
     background-color: rgb(203, 248, 248);
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section {
+    padding: 1rem;
+    background-color: white;
+}
+
