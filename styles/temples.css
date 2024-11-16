@@ -117,18 +117,4 @@ footer {
     font-size: 20px;
 }
 
-@media screen and (min-width: 500px) {
-
-    main {
-        max-width: auto;
-    }
-
-    main h2 {
-        max-width: auto;
-    }
-
-    .temple-card-container {
-        grid-template-columns: repeat(3, 450px);
-    }
-    }
     
