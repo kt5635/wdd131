@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131: temples</title>
-    <meta name="description" content="media-query learning and practice file. Week 02 WDD 131">
+    <title>WDD 131: Temple Album</title>
+    <meta name="description" content="This is a temple album to practice the use of responsive wesites based on screen size using css and javascript.">
     <meta name="author" content="Katie Hulet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,14 +15,17 @@
 </head>
 <body>
     <header>
-        <nav>
+        <div class="nav-box">
+            <button id="menu"></button>
             <h1>Temple Album</h1>
-            <a href="" target="_blank">Home</a>
-            <a href="" target="_blank">Old</a>
-            <a href="" target="_blank">New</a>
-            <a href="" target="_blank">Large</a>
-            <a href="" target="_blank">Small</a>
-        </nav>
+            <nav class="navigation">
+                <a href="" target="_blank">Home</a>
+                <a href="" target="_blank">Old</a>
+                <a href="" target="_blank">New</a>
+                <a href="" target="_blank">Large</a>
+                <a href="" target="_blank">Small</a>
+            </nav>
+        </div>
     </header>
     <main>
         <h2>Home</h2>
@@ -64,15 +67,17 @@
                 <figcaption>Saratoga Springs Utah Temple</figcaption>    
             </figure>
         </div>
-
     </main>
     <footer>
-        <p>
-            <span id="currentyear"></span> | Katie Hulet | Utah
-        </p>
-        <p>
-            <span id="lastModified"></span>
-        </p>
+        <div>
+            <p>
+                &#169 <span id="currentyear"></span> | Katie Hulet | Utah
+            </p>
+            <p>
+                Last modified: <span id="lastModified"></span>
+            </p>
+        </div>
+
     </footer>
 </body>
 </html>

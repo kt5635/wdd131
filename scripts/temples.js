@@ -7,3 +7,14 @@ document.getElementById("currentyear").innerHTML = year;
 
 const date = new Date(document.lastModified);
 document.getElementById("lastModified").innerHTML = date;
+
+// Hamberbur menu for mobile
+
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
+

@@ -31,7 +31,8 @@
 
 nav {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: end;
     background-color: var(--nav-background-color);
     padding: 10px;
     font-family: var(--paragraph-font);
@@ -41,11 +42,14 @@ nav {
 
 }
 
-nav h1 {
-    padding: 0;
+.nav-box {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
 }
 
 nav a {
+    display: none;
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 15px;
@@ -59,9 +63,27 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-body {
-    max-width: 1600px;
 
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--secondary-color);
+    position: absolute;
+    right: 40px;
+    top: 55px;
+}
+
+.open a {
+	display: block;
 }
 
 header {
@@ -96,25 +118,26 @@ main h2 {
     margin-top: 0;
 }
 
-.temple-card-container {
-    justify-content: center;
-}
-
 figure {
     background-color: var(--accent3-color);
     padding: 25px;
     font-family: var(--paragraph-font);
     text-align: center;
+    color: var(--secondary-color);
+    margin: 5px;
 }
 
 footer {
     display: flex;
+    justify-content: center;
     height: auto;
     background-color: var(--accent2-color);
     color: var(--secondary-color);
-    justify-content: center;
     font-family: var(--paragraph-font);
     font-size: 20px;
+    text-align: center;
 }
+
+
 
     
