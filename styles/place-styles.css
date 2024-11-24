@@ -31,14 +31,18 @@
   main {
     background-color: var(--primary-color);
     margin: auto;
-    display: grid;
   }
 
   .hero-img {
     width: 100%;
+    overflow: hidden;
+
+  }
+
+  .hero-img img {
+    width: 100%;
     height: auto;
-    background-size: cover;
-    margin: 0%;
+    object-fit: cover;
   }
 
   h1 {
@@ -61,6 +65,9 @@
   }
 .data, .weather {
     border-bottom: var(--secondary-color) solid .5rem;
+    display: flex;
+    flex-direction: column;
+
 }
   li {
     font-family: var(--paragraph-font);

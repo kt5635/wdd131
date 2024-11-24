@@ -1,25 +1,32 @@
 @media only screen and (min-width: 800px) {
 
-    main {
-        display: grid;
-        grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    .nain-container {
+        position: relative;
+    }
+
+    .hero-img img {
+        height: auto;
+        position: relative;
     }
 
     .data {
-        grid-column: 1/2;
-        grid-row: 1/2;
+        top: 15%;
+        left: 5%;
+
     }
 
     .weather {
-        grid-column: 3/4;
-        grid-row: 2/3;
+        bottom: 0;
+        right: 5%;
     }
 
     .data, .weather {
+        position: absolute;
         border-bottom: none;
         border: var(--accent1-color) solid .5rem;
         margin: 3rem;
         padding: 2rem;
+        background-color: var(--primary-color);
     }
 
     .weather a::after {
