@@ -21,4 +21,9 @@
         margin: 3rem;
         padding: 2rem;
     }
+
+    .weather a::after {
+        content: ""; 
+        display: inline-block;
+      }
 }

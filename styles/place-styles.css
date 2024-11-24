@@ -69,14 +69,10 @@
     text-align: center;
   }
 
-  .weather-icon {
-
-    display: flex;
-    justify-self: center;
-  }
-
-  .weather-icon img {
-    max-width: 40%;
+  .weather img {
+    width: 20%;
+    display: block;
+    margin: auto;
   }
 
   footer {
