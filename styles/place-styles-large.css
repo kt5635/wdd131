@@ -1,6 +1,24 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
 
-    body {
-        background-image: url("images/goblin-valley-large.webp");
+    main {
+        display: grid;
+        grid-template-columns: auto, auto, auto, auto;
+    }
+
+    .data {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .weather {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .data, .weather {
+        border-bottom: none;
+        border: var(--accent1-color) solid .5rem;
+        margin: 3rem;
+        padding: 2rem;
     }
 }
