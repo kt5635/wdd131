@@ -1,0 +1,187 @@
+:root {
+    --primary-color: #ada0a6;
+    --secondary-color: #37392E;
+    --accent1-color: #D2CBCB;
+    --accent2-color: #DED6D6;
+    --accent3-color: #F9E7E7;
+
+    --nav-background-color: #F9E7E7;
+    --nav-link-color:#ada0a6;
+    --nav-hover-link-color: #37392E;
+    --nav-hover-background-color: #ada0a6;
+
+    --heading-font: 'vidaloka-regular', serif;
+    --paragraph-font: 'patrick-hand-regular', sans-serif;
+
+}
+
+/* Navigation and header*/
+
+.vidaloka-regular {
+    font-family: "Vidaloka", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+  .patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: var(--nav-background-color);
+    padding: 10px;
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+
+}
+
+.nav-box {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+}
+
+nav a {
+    display: none;
+    color: var(--nav-hover-link-color);
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav nav a:visited {
+    background-color: var(--nav-hover-background-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--secondary-color);
+    position: absolute;
+    right: 40px;
+    top: 55px;
+}
+
+.open a {
+	display: block;
+}
+
+header {
+    display: grid;
+    background-color: var(--accent3-color);
+    font-family: var(--heading-font);
+}
+
+h1 {
+    padding: 15px;
+    font-size: 30px;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+h2 {
+    padding: 15px;
+    font-size: 25px;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+main {
+    display: grid;
+    background-color: var(--primary-color);
+    justify-content: center;
+}
+
+main h2 {
+    background-color: var(--accent2-color);
+    margin-top: 0;
+}
+
+.temple-card {
+    background-color: var(--accent3-color);
+    padding: 15px;
+    font-family: var(--paragraph-font);
+    text-align: center;
+    color: var(--secondary-color);
+    margin: 10px;
+}
+
+
+.card-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.temple-card:hover {
+    transform: scale(1.05);
+  }
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        margin-right: 50px;
+    }
+
+    nav a {
+        display: flex;
+    }
+
+    .nav-box {
+        justify-content: space-between;
+    }
+
+    .nav-box h1 {
+        margin-left: 50px;
+    }
+
+    body {
+        max-width: 1600px;
+    }
+
+    #temple-card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 450px);
+    }
+
+}
+
+    
+
+    

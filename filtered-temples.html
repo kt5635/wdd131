@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Temple Album</title>
+    <meta name="description" content="This is a temple album to practice the use of responsive wesites based on screen size using css and javascript.">
+    <meta name="author" content="Katie Hulet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src ="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="nav-box">
+            <button id="menu" aria-label="display menu"></button>
+            <h1>Temple Album</h1>
+            <nav class="navigation">
+                <a href="#" id="all-temples">Home</a>
+                <a href="#" id="old-temples">Old</a>
+                <a href="#" id="new-temples">New</a>
+                <a href="#" id="large-temples">Large</a>
+                <a href="#" id="small-temples">Small</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div id="temple-card-container">
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>
+                &#169; <span id="currentyear"></span> | Katie Hulet | Utah
+            </p>
+            <p>
+                Last modified: <span id="lastModified"></span>
+            </p>
+        </div>
+
+    </footer>
+</body>
+</html>
