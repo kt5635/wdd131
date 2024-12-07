@@ -29,3 +29,12 @@ function calculateWindChill() {
 
 // Call the function immediately when the page loads
 window.onload = calculateWindChill;
+
+// encode svg file
+
+
+// function encodeSvgToDataUri(svgContent) {
+//     // Escape special characters (e.g., replace `#` with `%23`, etc.)
+//     const encodedSvg = encodeURIComponent(svgContent);
+//     return `data:image/svg+xml,${encodedSvg}`;
+// }
