@@ -22,7 +22,7 @@
             <form method="get" action="review.html" id="reviewForm" class="product-form">
                 <fieldset>
                     <legend>Product Name*</legend>
-                    <select name="product" id="productList" aria-labelledby="product-description-drop-down" required>
+                    <select name="product" id="productList" aria-labelledby="productList" required>
                         <option value="" disabled selected hidden>Select a Product...</option>
                     </select>
                 </fieldset>
@@ -38,7 +38,7 @@
 
                 <fieldset>
                     <legend>Date of Installation*</legend>
-                    <label aria-labelledby="enter-installation-date"><input type="date" id="enter-installation-date" name="installationDate" required></label>
+                    <label for="enter-installation-date"><input type="date" id="enter-installation-date" name="installationDate" aria-describedbyrequired="pick-installation-date-from-calendar"></label>
                 </fieldset>
 
                 <fieldset>
