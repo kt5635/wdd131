@@ -21,14 +21,15 @@
         <h1>Product Review</h1>
             <form method="get" action="review.html" id="reviewForm" class="product-form">
                 <fieldset>
-                    <legend>Product Name*</legend>
-                    <label aria-labelledby="productList"><select name="product" id="productList" required>
-                        <option value="" disabled selected hidden>Select a Product...</option>
-                    </select></label>
+                    <legend>Product Name (Required)</legend>
+                    <label for="productList">Select a Product</Select></label>
+                    <select name="product" id="productList" required>
+                        <option value="" disabled selected hidden>Select Product</option>
+                    </select>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Overall Rating*</legend>
+                    <legend>Overall Rating (Required)</legend>
                     <label aria-labelledby="rating-1"><input type="radio" id="rating-1" name="rating" value="1" required> &star;</label>
                     <label aria-labelledby="rating-2"><input type="radio" id="rating-2" name="rating" value="2" required> &star;&star;</label>
                     <label aria-labelledby="rating-3"><input type="radio" id="rating-3" name="rating" value="3" required> &star;&star;&star;</label>
@@ -37,8 +38,9 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Date of Installation*</legend>
-                    <label for="enter-installation-date"><input type="date" id="enter-installation-date" name="installationDate"></label>
+                    <legend>Date of Installation (Required)</legend>
+                    <label for="enter-installation-date">Installation Date:</label>
+                    <input type="date" id="enter-installation-date" name="installationDate">
                 </fieldset>
 
                 <fieldset>
