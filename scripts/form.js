@@ -51,23 +51,38 @@ const products = [
     });
   }
 
-  window.onload = populateProductList;
-
 //   review counter
 
 function loadReviewCounter() {
     let reviewCount = localStorage.getItem('reviewCount');
-    if (reviewCount ===null) {
+    if (reviewCount === null) {
         reviewCount = 0;
     }
 
     document.getElementById('reviewCount').textContent = `Number of reviews completed: ${reviewCount}`;
-
-    document.getElementById('reviewFOrm').reset();
 }
 
-window.onload = function() {
-    loadReviewCounter();
+// Handle form submission
+function handleFormSubmission(event) {
+    event.preventDefault();  
 
-    document.getElementById('reviewForm').addEventListener('submit', handleFormSubmission);
+ 
+    let reviewCount = parseInt(localStorage.getItem('reviewCount') || '0');
+    reviewCount++;
+    localStorage.setItem('reviewCount', reviewCount);
+
+    window.location.href= 'review.html';
+}
+
+
+window.onload = function() {
+    if (document.getElementById('reviewForm')) {
+
+        populateProductList();
+        document.getElementById('reviewForm').addEventListener('submit', handleFormSubmission);
+    } else if (document.getElementById('reviewCount')) {
+
+        loadReviewCounter();
+    }
 };
+

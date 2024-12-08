@@ -28,15 +28,6 @@
   }  
 
 /* main */
-.review-page {
-    margin: 8rem;
-}
-
-.review-page p {
-    font-size: 1.5rem;
-    text-align: center;
-}
-
 main {
     display: flex;    
     justify-content: center;
@@ -128,6 +119,34 @@ fieldset {
     display: flex;
     justify-content: center;
 
+}
+
+/* counter page */
+
+.counter-container {
+    margin: 8rem;
+}
+
+.counter-container p {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.review-count {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
 }
 
 
