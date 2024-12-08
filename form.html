@@ -22,9 +22,9 @@
             <form method="get" action="review.html" id="reviewForm" class="product-form">
                 <fieldset>
                     <legend>Product Name*</legend>
-                    <select name="product" id="productList" aria-labelledby="productList" required>
+                    <label aria-labelledby="productList"><select name="product" id="productList" required>
                         <option value="" disabled selected hidden>Select a Product...</option>
-                    </select>
+                    </select></label>
                 </fieldset>
 
                 <fieldset>
@@ -38,11 +38,11 @@
 
                 <fieldset>
                     <legend>Date of Installation*</legend>
-                    <label for="enter-installation-date"><input type="date" id="enter-installation-date" name="installationDate" aria-describedbyrequired="pick-installation-date-from-calendar"></label>
+                    <label for="enter-installation-date"><input type="date" id="enter-installation-date" name="installationDate"></label>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Which features did you find useful in each product? (Check all that apply)</legend>
+                    <legend>Which features did you find useful in each product? (Check all that apply)</legend>                    
                     <label aria-labelledby="durability-check"><input type="checkbox" id="durability-check" name="durability" value="yes"> Durability</label>
                     <label aria-labelledby="ease-check"><input type="checkbox" id="ease-check" name="ease" value="yes"> Ease of Use</label>
                     <label aria-labelledby="performance-check"><input type="checkbox" id="performance-check" name="performance" value="yes"> Performance</label>
@@ -51,7 +51,8 @@
 
                 <fieldset>
                     <legend>Written Review (optional)</legend>
-                    <textarea id="reveiw-text-area" name="written-review" placeholder="Write your review here..."></textarea>
+                    <label aria-labelledby="review-text-area">
+                    <textarea id="reveiw-text-area" name="written-review" placeholder="Write your review here..."></textarea></label>
                 </fieldset>
 
                 <fieldset>
