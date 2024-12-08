@@ -98,6 +98,12 @@ fieldset {
     font-size: 1rem;
 }
 
+.product-form input[type="checkbox"],
+.product-form input[type="radio"] {
+    transform: scale(1.25);
+    margin: .4rem;
+}
+
 textarea {
     width: 100%;
     max-width: 400px;
