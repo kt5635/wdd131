@@ -29,34 +29,34 @@
 
                 <fieldset>
                     <legend>Overall Rating*</legend>
-                    <label><input type="radio" id="rating-1" name="rating" value="1" required> &star;</label>
-                    <label><input type="radio" id="rating-2" name="rating" value="2" required> &star;&star;</label>
-                    <label><input type="radio" id="rating-3" name="rating" value="3" required> &star;&star;&star;</label>
-                    <label><input type="radio" id="rating-4" name="rating" value="4" required> &star;&star;&star;&star;</label>
-                    <label><input type="radio" id="rating-5" name="rating" value="5" required> &star;&star;&star;&star;&star;</label>
+                    <label for="rating-1"><input type="radio" id="rating-1" name="rating" value="1" required> &star;</label>
+                    <label for="rating-2"><input type="radio" id="rating-2" name="rating" value="2" required> &star;&star;</label>
+                    <label for="rating-3"><input type="radio" id="rating-3" name="rating" value="3" required> &star;&star;&star;</label>
+                    <label for="rating-4"><input type="radio" id="rating-4" name="rating" value="4" required> &star;&star;&star;&star;</label>
+                    <label for="rating-5"><input type="radio" id="rating-5" name="rating" value="5" required> &star;&star;&star;&star;&star;</label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Date of Installation*</legend>
-                    <label><input type="date" id="enter-installation-date" name="installationDate" required></label>
+                    <label for="installation-date"><input type="date" id="enter-installation-date" name="installationDate" required></label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Which features did you find useful in each product? (Check all that apply)</legend>
-                    <label><input type="checkbox" id="durability-check" name="durability" value="yes"> Durability</label>
-                    <label><input type="checkbox" id="ease-check" name="ease" value="yes"> Ease of Use</label>
-                    <label><input type="checkbox" id="performance-check" name="performance" value="yes"> Performance</label>
-                    <label><input type="checkbox" id="design-check" name="design" value="yes"> Design</label>
+                    <label for="durability"><input type="checkbox" id="durability-check" name="durability" value="yes"> Durability</label>
+                    <label for="ease-of-use"><input type="checkbox" id="ease-check" name="ease" value="yes"> Ease of Use</label>
+                    <label for="performance"><input type="checkbox" id="performance-check" name="performance" value="yes"> Performance</label>
+                    <label for="design"><input type="checkbox" id="design-check" name="design" value="yes"> Design</label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Written Review (optional)</legend>
-                    <textarea id="reveiw-text-area" name="written-review"></textarea>
+                    <textarea id="reveiw-text-area" name="written-review" placeholder="Write your review here..."></textarea>
                 </fieldset>
 
                 <fieldset>
                     <legend>Your Name (optional)</legend>
-                    <input type="text" id="enter-user-name" name="name">
+                    <input type="text" id="enter-user-name" name="name" placeholder="Full name">
                 </fieldset>
 
                 <input type="submit" value="Post Review">
