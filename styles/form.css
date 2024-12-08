@@ -1,7 +1,7 @@
 :root {
     --primary-color: #FFFFFF;
     --secondary-color: #2B2D42;
-    --accent1-color: #8D99AE;
+    --accent1-color: #869abe;
     --accent2-color: #EDF2F4;
 
     --nav-background-color: #8D99AE;
@@ -98,7 +98,7 @@ fieldset {
     font-size: 1rem;
 }
 
-.product-form input[type="textarea"] {
+textarea {
     width: 100%;
     max-width: 400px;
     min-height: 150px;
