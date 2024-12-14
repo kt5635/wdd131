@@ -22,10 +22,10 @@
             <form method="get" action="review.html" id="reviewForm" class="product-form">
                 <fieldset>
                     <legend>Product Name (Required)</legend>
-                    <label for="productList">Select a Product</label>
-                    <select name="product" id="productList" required>
+
+                    <label for="productList"></label><select name="product" id="productList" required>
                         <option value="" disabled selected hidden>Select Product</option>
-                    </select>
+                    </select></label>
                 </fieldset>
 
                 <fieldset>
@@ -39,8 +39,7 @@
 
                 <fieldset>
                     <legend>Date of Installation (Required)</legend>
-                    <label for="enter-installation-date">Installation Date:</label>
-                    <input type="date" id="enter-installation-date" name="installationDate">
+                    <label for="enter-installation-date"></label><input type="date" id="enter-installation-date" name="installationDate"></label>
                 </fieldset>
 
                 <fieldset>
@@ -53,12 +52,12 @@
 
                 <fieldset>
                     <legend>Written Review (optional)</legend>
-                    <textarea id="reveiw-text-area" name="written-review" placeholder="Write your review here..."></textarea>
+                    <label><textarea id="reveiw-text-area" name="written-review" placeholder="Write your review here..."></textarea></label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Your Name (optional)</legend>
-                    <input type="text" id="enter-user-name" name="name" placeholder="Full name">
+                    <label><input type="text" id="enter-user-name" name="name" placeholder="Full name"></label>
                 </fieldset>
 
                 <input type="submit" value="Post Review">
