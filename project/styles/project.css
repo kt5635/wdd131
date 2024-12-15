@@ -82,9 +82,15 @@ nav a:hover {
     border-radius: 30px;
 }
 
-h1, h2 {
+h1 {
     font-family: var(--heading-font);
     font-size: 38px;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 30px;
     color: var(--secondary-color);
 }
 
@@ -213,6 +219,46 @@ p {
     border-radius: 30px;
     padding: .5rem 5rem;
 }
+
+/* tutorial page */
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+    text-align: center;
+}
+
+.tutorial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.supply-list, .step1, .step2, .step3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.supply-list ul {
+    list-style-type: none;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+}
+
+.supply-list img, .step1 img, .step2 img, .step3 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 30px;
+}
+
 
 /* contact page */
 .contact-info {

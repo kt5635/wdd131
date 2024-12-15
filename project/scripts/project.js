@@ -20,8 +20,8 @@ const tutorial = [
         tutorialLink: "kanzashi.html"
     },
     {
-        flowerName: "Veronica",
-        description: "This Ribbon flower closely resembles a flower called Vernoica. Made out of double sided satin ribbon it is an easy flower for beginners.",
+        flowerName: "Poppy",
+        description: "This Ribbon flower closely resembles a flower called a Poppy. Made out of double sided satin ribbon it is an easy flower for beginners.",
         difficultyLevel: "Easy",
         image: "../images/placeholder.png",
         alt: "Ribbon Flower",
