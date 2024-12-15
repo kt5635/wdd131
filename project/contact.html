@@ -25,6 +25,30 @@
         </nav>
     </header>
     <main>
+        <div class="contact-info">
+            <h1>Contact us</h1>
+            <p>Do you have a question? Do you have feedback to make our tutorials better? We want to hear from you! Please send us a message below!</p>
+        </div>
+        <form id="contactForm">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="text-field">Message</label>
+            <textarea id="text-field" name="text-field"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div id="thanksMessage" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Thank you for your message! We will contact you as soon as possible!</p>
+            </div>
+        </div>
+
     </main>
     <footer>
         <div>

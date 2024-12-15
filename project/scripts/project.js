@@ -67,3 +67,23 @@ function displayTutorials() {
 }
 
 window.onload = displayTutorials;
+
+// contact form pop up
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    document.getElementById('thanksMessage').style.display = "block";
+
+    document.getElementById('contactForm').reset();
+});
+
+document.querySelector('.close').addEventListener('click', function(){
+    document.getElementById('thanksMessage').style.display = 'none';
+})
+
+window.addEventListener('click', function(event) {
+    if (event.target == document.getElementById('thanksMessage')) {
+        document.getElementById('thanksMessage').style.display = "none";
+    }
+});
