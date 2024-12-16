@@ -78,6 +78,29 @@ window.onload = displayTutorials;
 
 // contact form pop up
 
+function saveFormData() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+
+    // Store name and email in localStorage
+    localStorage.setItem('userName', name);
+    localStorage.setItem('userEmail', email);
+}
+
+function loadFormData() {
+    const savedName = localStorage.getItem('userName');
+    const savedEmail = localStorage.getItem('userEmail');
+
+    if (savedName) {
+        document.getElementById('name').value = savedName;
+    }
+    if (savedEmail) {
+        document.getElementById('email').value = savedEmail;
+    }
+}
+
+window.addEventListener('load', loadFormData);
+
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); 
 
