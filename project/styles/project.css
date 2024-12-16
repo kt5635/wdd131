@@ -454,7 +454,6 @@ footer p {
     .tutorial-container div {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        grid-row: auto auto;
         align-items: start;
         flex: 1rem;
         max-width: 500px;
