@@ -76,13 +76,12 @@ function displayTutorials() {
 
 window.onload = displayTutorials;
 
-// contact form pop up
+// contact form pop up and saving name, email in local storage 
 
 function saveFormData() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
 
-    // Store name and email in localStorage
     localStorage.setItem('userName', name);
     localStorage.setItem('userEmail', email);
 }
