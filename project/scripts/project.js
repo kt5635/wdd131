@@ -1,3 +1,11 @@
+// Get the "Menu" text and the menu
+const menuText = document.getElementById('menu-text');
+const menu = document.getElementById('menu');
+
+menuText.addEventListener('click', function() {
+    menu.classList.toggle('active');
+});
+
 // gets current date
 const d = new Date();
 let year = d.getFullYear();
@@ -15,17 +23,17 @@ const tutorial = [
         flowerName: "Kanzashi",
         description: "This type of ribbon flower is called Kanzashi. Usually made out of double sided satin ribbon.",
         difficultyLevel: "Medium",
-        image: "../images/placeholder.png",
+        image: "images/kanzashi-card.webp",
         alt: "Ribbon Flower",
         tutorialLink: "kanzashi.html"
     },
     {
         flowerName: "Poppy",
-        description: "This Ribbon flower closely resembles a flower called a Poppy. Made out of double sided satin ribbon it is an easy flower for beginners.",
+        description: "This Ribbon flower closely resembles a flower called a Poppy. This is an easy flower for beginners.",
         difficultyLevel: "Easy",
-        image: "../images/placeholder.png",
+        image: "images/simple-card.webp",
         alt: "Ribbon Flower",
-        tutorialLink: "veronica.html"
+        tutorialLink: "poppy.html"
     }
 ];
 
